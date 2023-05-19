@@ -84,7 +84,7 @@ header h1{
 .line{
     height: 8px;
     position: absolute;
-    width: 100%;
+    width: 110%;
     left: -5%;
     bottom: 1%;
     z-index: -1;
