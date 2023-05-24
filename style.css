@@ -18,6 +18,7 @@
 body{
     font-family: var(--text-font);
     background-color: var(--background);
+
 }
 header{
     height: 80vh;
@@ -73,6 +74,7 @@ header h1{
     color: var(--gray);
     text-align: center;
     line-height: 2rem;
+    padding: 0px 12px;
 }
 .description__link{
     position: relative;
@@ -93,4 +95,57 @@ header h1{
 }
 .line-yellow{
     background-color: var(--yellow);
+}
+.line-red{
+    background-color: var(--red);
+}
+.container{
+    height: 600px;
+    background-size: cover;
+}
+.container.graphic{
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+}
+.container.photography{
+    background-image: url(./images/mobile/image-photography.jpg);
+}
+.container.graphic *{
+    color: var(--graphic-text);
+}
+.container.photography *{
+    color: var(--photography-text);
+}
+.container .description{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 16px;
+}
+.testimonials{
+    display: grid;
+    place-items: center;
+}
+.testimonials-title{
+    font-family: var(--title-font);
+    font-size: 1rem;
+    color: var(--gray);
+}
+.client{
+    display: grid;
+    place-items: center;
+}
+.client__avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+
+}
+.client__avatar:nth-child(1){
+    background-image: url(./images/image-emily.jpg);
+}
+.client__text{
+
 }
